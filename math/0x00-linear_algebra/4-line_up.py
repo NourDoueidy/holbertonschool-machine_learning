@@ -8,5 +8,6 @@ def add_arrays(arr1, arr2):
         return None
     add_arr = []
     for i in range(len(arr1)):
-         add_arr.append(arr1[i] + arr2[i])
+        for j in range(len(arr2)):
+            add_arr.append(arr1[i] + arr2[j])
     return add_arr
