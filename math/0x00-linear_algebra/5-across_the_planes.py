@@ -10,5 +10,5 @@ def add_matrices2D(mat1, mat2):
     for i in range(len(mat1)):
         sum_mat.append(list())
         for j in range(len(mat1[i])):
-            sum_mat[i].append([mat1[i][j] + mat2[i][j])
+            sum_mat[i].append(mat1[i][j] + mat2[i][j])
     return sum_mat
