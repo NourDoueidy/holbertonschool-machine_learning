@@ -12,11 +12,11 @@ def cat_matrices2D(mat1, mat2, axis=0):
     cat_mat = []
     
     if axis == 0:
-        cat_mat = mat1[:] + mat2[:]
-    elif axis ==1:
+        cat_mat = mat1 + mat2
+    elif axis == 1:
         for r in range(len(mat1)):
             rows = []
-            for c in range(len(mat1[0]):
+            for c in range(len(mat1[0])):
                 rows.append(mat1[r][c])
             for c in range(len(mat2[0])):
                 rows.append(mat2[r][c])
