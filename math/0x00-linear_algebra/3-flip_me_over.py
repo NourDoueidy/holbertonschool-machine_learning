@@ -8,8 +8,8 @@ def matrix_transpose(matrix):
     columns = len(matrix[0])
     matrix_transpose = []
     for j in range(columns):
-        row=[]
+        row = []
         for i in range(rows):
             row.append(matrix[i][j])
-        matrix_transpose.append(rows)
+        matrix_transpose.append(row)
     return matrix_transpose
