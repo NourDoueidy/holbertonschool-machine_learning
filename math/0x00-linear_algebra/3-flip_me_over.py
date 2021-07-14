@@ -4,8 +4,12 @@
 
 def matrix_transpose(matrix):
     ''' transpose without numpy '''
-    matrix_transpose = 0
-    for i in len(matrix):
-        for j in len(matrix[0]):
-            matrix_transpose[j][i] = matrix[i][j]
+    rows = len(matrix)
+    columns = len(matrix[0])
+    matrix_transpose = []
+    for j in range(columns):
+        row=[]
+        for i in range(rows):
+            row.append(matrix[i][j])
+        matrix_transpose.append(rows)
     return matrix_transpose
