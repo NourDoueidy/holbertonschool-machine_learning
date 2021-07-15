@@ -4,4 +4,4 @@
 
 def np_transpose(matrix):
     ''' Tranpose the matrix '''
-    return matrix.transpose
+    return matrix.transpose()
