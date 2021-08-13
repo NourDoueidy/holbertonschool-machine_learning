@@ -6,6 +6,6 @@ import tensorflow as tf
 
 
 def create_placeholders(nx, classes):
-    ''' Create Tensorflow placeholders '''
+    ''' Create Tensor placeholders '''
     return (tf.placeholder(float, shape=[None, nx], name='x'),
-            tf.placeholder(float, shape=[None, classes], name='y))
+            tf.placeholder(float, shape=[None, classes], name='y'))
